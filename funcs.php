@@ -8,11 +8,7 @@ function h($str)
 
 //DB接続
 function db_conn()
-{
-　$prod_db = "kazucahxx_kadai10-4_phpdbc";
-　$prod_host = "mysql642.db.sakura.ne.jp";
-　$prod_id = "kazucahxx";
-　$prod_pw = "SKkazuki1234-";
+
     try {
         $pdo = new PDO('mysql:dbname=' . $prod_db . ';charset=utf8;host=' . $prod_host, $prod_id, $prod_pw);
         return $pdo;
